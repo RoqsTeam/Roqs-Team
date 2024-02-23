@@ -1,7 +1,10 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Roqs Team | Rebirth Champions X", HidePremium = true, SaveConfig = true, IntroText = "Roqs Team", ConfigFolder = "RoqsTeam"})
 
-
+local Module = require(game:GetService("Players").LocalPlayer.PlayerScripts.ClientMain.Replications.Workers.WalkDummy)
+setconstant(Module,34,function()
+   game:GetService("RunService").Heartbeat:Wait()
+end)
 
 _G.autoTap = true
 _G.autoRebit = true
